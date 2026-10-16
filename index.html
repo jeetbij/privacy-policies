@@ -4,98 +4,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
-    <title>TaskFlow Helper — Privacy Policy</title>
-    <style>
-      body { max-width: 720px; margin: 40px auto; padding: 0 20px; font: 16px/1.6 system-ui, sans-serif; color: #1a1a1a; }
-      h1 { font-size: 24px; }
-      h2 { font-size: 18px; margin-top: 28px; }
-      code { background: #f2f2f2; padding: 1px 4px; border-radius: 4px; }
-      .date { color: #666; font-size: 14px; }
-      a { color: #2563eb; }
-    </style>
+    <title>Privacy Policies &amp; Legal — jeetbij</title>
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <h1>Privacy Policy — TaskFlow Helper</h1>
-    <p class="date">Last updated: 2026-09-30</p>
+    <h1>Privacy Policies &amp; Legal Documents</h1>
+    <p class="muted">Policy and legal pages for apps and extensions published by Chandrajeet (jeetbij).</p>
 
-    <p>
-      TaskFlow Helper ("the extension") is a browser extension for authorized
-      users to automate repetitive payout-processing actions on a specific
-      trader dashboard (the "supported site"). This policy comprehensively
-      explains what data it collects, how it's used, where it's stored, and
-      every party it's shared with.
-    </p>
-
-    <h2>What the extension collects and why</h2>
-    <ul>
-      <li><strong>Login credentials (email + password):</strong> entered in the
-        extension and sent directly to our authentication provider (Supabase) to
-        sign you in. They are not stored by the extension after sign-in.</li>
-      <li><strong>Session token:</strong> returned on login and stored locally in
-        your browser to keep you signed in. Refreshed as needed. Sent to
-        Supabase to authenticate each request the extension makes on your
-        behalf (see below).</li>
-      <li><strong>Trader account identifier (username):</strong> the extension
-        reads your username from the supported site's own authentication token
-        to lock your account to a single identity (anti-sharing). Sent to and
-        stored in Supabase for your account.</li>
-      <li><strong>Device identifier:</strong> the extension generates a random
-        identifier (not derived from hardware, IP, or browser fingerprint) and
-        stores it locally. It's sent to Supabase to enforce a single active
-        device per account and is stored there against your account.</li>
-      <li><strong>Transaction/payout activity log:</strong> each time the
-        extension accepts (or attempts and fails to accept) a payout on the
-        supported site, it sends the payout ID, amount, outcome, failure reason
-        (if any), and retry count to Supabase. Used to enforce your account's
-        transaction limit and to keep an audit trail.</li>
-      <li><strong>Payout payment details ("requisites"):</strong> as payouts
-        appear on the supported site, the extension reads the payment details
-        already shown there — payout ID, amount, status, payment method, and
-        the associated payee's bank/payment account name, account number, and
-        bank routing code (IFSC) — and sends them to Supabase for
-        record-keeping and dispute resolution. This data describes the payment
-        counterparties of transactions carried out through the supported site
-        under your account; it is collected only because it is shown on
-        payouts the extension processes there, not collected about you
-        directly.</li>
-      <li><strong>Extension version:</strong> sent with each authorization
-        request so the operator can gate outdated builds. Not linked to any
-        other identifying data beyond your account.</li>
-      <li><strong>Settings and local activity log:</strong> limits, timers, and
-        the recent activity feed shown in the popup are stored locally in your
-        browser only; never uploaded.</li>
+    <ul class="hub-list">
+      <li>
+        <a class="hub-card" href="monster-munch/">
+          <span class="name">Monster Munch</span>
+          <span class="desc">A gentle feeding game for children aged 4–8 (Android — <code>com.monstermunch.game</code>).</span>
+          <span class="links"><a href="monster-munch/">Privacy Policy</a><a href="monster-munch/terms.html">Terms of Service</a></span>
+        </a>
+      </li>
+      <li>
+        <a class="hub-card" href="taskflow-helper/">
+          <span class="name">TaskFlow Helper</span>
+          <span class="desc">A browser extension for authorized users automating payout-processing actions.</span>
+          <span class="links"><a href="taskflow-helper/">Privacy Policy</a></span>
+        </a>
+      </li>
     </ul>
 
-    <h2>Where data goes / who it's shared with</h2>
-    <p>
-      <a href="https://supabase.com/privacy">Supabase</a> (our authentication
-      and database backend) is the <strong>only</strong> party any of the data
-      above is sent to — it is the extension's sole backend for sign-in,
-      per-account configuration/binding, transaction/audit logging, and
-      payout-requisite storage described above. Nothing is sent to any other
-      third party. There is no analytics, tracking, advertising, or sale of
-      data, and no remote code is loaded — all code ships in the extension
-      package.
-    </p>
-
-    <h2>Data retention</h2>
-    <p>
-      Local data (session, settings, logs) stays in your browser until you
-      clear it or uninstall the extension. Account, configuration, binding,
-      transaction-audit, and payout-requisite records remain in Supabase until
-      deleted by the operator or upon a deletion request (see Contact below).
-    </p>
-
-    <h2>Permissions</h2>
-    <p>
-      The extension requests only what it needs to function: local storage
-      (settings, session, logs), access to the active tab to start/stop the
-      automation, and network access to the supported site (to read payout
-      data and submit accepts) and Supabase (authentication, configuration,
-      and the logging described above).
-    </p>
-
-    <h2>Contact</h2>
-    <p>Questions or data-deletion requests: <strong>chandrajeetbij@gmail.com</strong></p>
+    <hr />
+    <p class="muted">Contact: <a href="mailto:chandrajeetbij@gmail.com">chandrajeetbij@gmail.com</a></p>
   </body>
 </html>
