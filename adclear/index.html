@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>AdClear — Privacy Policy</title>
+    <style>
+      body { max-width: 720px; margin: 40px auto; padding: 0 20px; font: 16px/1.6 system-ui, sans-serif; color: #1a1a1a; }
+      h1 { font-size: 24px; }
+      h2 { font-size: 18px; margin-top: 28px; }
+      code { background: #f2f2f2; padding: 1px 4px; border-radius: 4px; }
+      .date { color: #666; font-size: 14px; }
+      a { color: #2563eb; }
+    </style>
+  </head>
+  <body>
+    <h1>Privacy Policy — AdClear</h1>
+    <p class="date">Last updated: 2026-10-21</p>
+
+    <p>
+      AdClear ("the extension") hides clearly labeled sponsored and advertising
+      content inside the ChatGPT web interface (<code>chatgpt.com</code> and
+      <code>chat.openai.com</code>). This policy explains exactly what the
+      extension collects, why, where it is stored, and what it never touches.
+    </p>
+
+    <h2>What AdClear does NOT collect</h2>
+    <p>AdClear does <strong>not</strong> read, store, or transmit:</p>
+    <ul>
+      <li>Your ChatGPT conversations, prompts, or responses</li>
+      <li>Any page content, text, or images from the sites you visit</li>
+      <li>Your browsing history or the list of sites you visit</li>
+      <li>Your name, email, account, location, or any login credentials</li>
+      <li>Health, financial, or payment information</li>
+    </ul>
+    <p>No page or conversation content ever leaves your browser.</p>
+
+    <h2>What AdClear collects and why</h2>
+    <ul>
+      <li><strong>Anonymous device identifier:</strong> a random UUID generated
+        on your device the first time the extension runs. It is not derived from
+        hardware, IP, or a browser fingerprint, and cannot be linked to your
+        identity or ChatGPT account. Sent to our backend to count distinct users
+        and bind an optional Pro license.</li>
+      <li><strong>Usage counts:</strong> a daily tally of how many ad cards the
+        extension hid — an aggregate number, not a record of what you saw or did.
+        Sent to our backend to understand usage and prioritize improvements.</li>
+      <li><strong>Feedback you submit:</strong> only if you use the in-extension
+        feedback form — an optional "is it working?" yes/no and any message you
+        type. Sent to our backend so the developer can fix issues and plan
+        features.</li>
+      <li><strong>Pro license token:</strong> if you choose to activate Pro, the
+        token you paste and your device ID are sent to validate and bind the
+        license. Payment happens in Telegram (Telegram Stars); the extension
+        never receives or stores card or bank details.</li>
+      <li><strong>Settings and local count:</strong> your toggles and the local
+        hidden-ad count are stored in your browser only and are never uploaded.</li>
+    </ul>
+
+    <h2>Where data goes / who it's shared with</h2>
+    <p>
+      <a href="https://supabase.com/privacy">Supabase</a> (our database backend)
+      is the <strong>only</strong> party the data above is sent to — the sole
+      backend for usage counts, feedback, and Pro license validation. Nothing is
+      sent to any other third party. There is no advertising, tracking, or sale
+      of data, and no remote code is loaded — all code ships in the extension
+      package.
+    </p>
+
+    <h2>Data retention &amp; deletion</h2>
+    <p>
+      Local data (settings, count) stays in your browser until you clear it or
+      uninstall. Anonymous counts and feedback are retained in Supabase to track
+      long-term trends. Because the device ID is random and not tied to your
+      identity, we cannot look you up by name; to delete records associated with
+      your device ID, send it to us (see Contact) and we will remove them.
+    </p>
+
+    <h2>Permissions</h2>
+    <p>
+      The extension requests only what it needs: local storage (settings, count,
+      trial/license state), access to the active tab for popup actions, periodic
+      alarms (to flush the anonymous count and re-check a Pro license), and
+      network access to the ChatGPT domains (where ads are hidden) and our
+      Supabase backend (counts, feedback, license validation).
+    </p>
+
+    <h2>Contact</h2>
+    <p>Questions or data-deletion requests: <strong>chandrajeetbij@gmail.com</strong></p>
+  </body>
+</html>
